@@ -12,9 +12,11 @@ public class HomeWork_22 {
             if (Objects.equals(UserPassword, "exit")) {
                 System.out.println("Session ended by user");
                 break;
+            } else {
+                System.out.println("The Password is incorrect. Try again:");
+                UserPassword = scan.nextLine();
             }
-            System.out.println("The Password is incorrect. Try again:");
-            UserPassword = scan.nextLine();
+
         }
         if (Objects.equals(UserPassword, RealPassword)) {
             System.out.println("The Password is correct. You are logged in");
