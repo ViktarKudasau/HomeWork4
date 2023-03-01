@@ -26,25 +26,25 @@ public class Calc_2 {
             while ((operation.equals("/")) && (number_two == 0)){
                 System.out.println("Деление на '0' запрещено. Введите второе число еще раз:");
                 number_two = scanner.nextDouble();
-            }
 
+            }
             switch (operation) {
-                case "+" -> {
+                case "+":
                     result = number_one + number_two;
                     System.out.printf("Результат = %s%n", result);
-                }
-                case "-" -> {
+                    break;
+                case "-":
                     result = number_one - number_two;
                     System.out.printf("Результат = %s%n", result);
-                }
-                case "*" -> {
+                    break;
+                case "*":
                     result = number_one * number_two;
                     System.out.printf("Результат = %s%n", result);
-                }
-                case "/" -> {
+                    break;
+                case "/":
                     result = number_one / number_two;
                     System.out.println(String.format("Результат = %s", result));
-                }
+                    break;
             }
             System.out.println("Хотите продолжить? 'да' или 'нет' :");
             String answer = scanner2.nextLine();
