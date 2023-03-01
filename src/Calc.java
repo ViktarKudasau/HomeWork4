@@ -6,8 +6,6 @@ public class Calc {
         double number_one;
         double number_two;
         double result;
-        String exit;
-        String answer;
 
         while (true) {
             System.out.println("Введите первое число:");
@@ -32,65 +30,34 @@ public class Calc {
             }
             if (operation.equals("+")){
                 result = number_one + number_two;
-                System.out.println(String.format("Результат = %s", result));
-                System.out.println("Хотите продолжить? 'да' или 'нет' :");
-                answer = scanner2.nextLine();
-                while ((!answer.equalsIgnoreCase("нет")) && (!answer.equalsIgnoreCase("да"))){
-                    System.out.println("Некорректное выражение. Желаете продолжить 'да' или 'нет' ?:");
-                    answer = scanner2.nextLine();
-                }
-                if (answer.equalsIgnoreCase("нет")){
-                    System.out.println("Вы вышли из приложения!");
-                    break;
-                }
+                System.out.printf("Результат = %s%n", result);
             }
 
             if (operation.equals("-")){
                 result = number_one - number_two;
-                System.out.println(String.format("Результат = %s", result));
-                System.out.println("Хотите продолжить? 'да' или 'нет' :");
-                answer = scanner2.nextLine();
-                while ((!answer.equalsIgnoreCase("нет")) && (!answer.equalsIgnoreCase("да"))){
-                    System.out.println("Некорректное выражение. Желаете продолжить 'да' или 'нет' ?:");
-                    answer = scanner2.nextLine();
-                }
-                if (answer.equalsIgnoreCase("нет")){
-                    System.out.println("Вы вышли из приложения!");
-                    break;
-                }
+                System.out.printf("Результат = %s%n", result);
             }
 
             if (operation.equals("*")){
                 result = number_one * number_two;
-                System.out.println(String.format("Результат = %s", result));
-                System.out.println("Хотите продолжить? 'да' или 'нет' :");
-                answer = scanner2.nextLine();
-                while ((!answer.equalsIgnoreCase("нет")) && (!answer.equalsIgnoreCase("да"))){
-                    System.out.println("Некорректное выражение. Желаете продолжить 'да' или 'нет' ?:");
-                    answer = scanner2.nextLine();
-                }
-                if (answer.equalsIgnoreCase("нет")){
-                    System.out.println("Вы вышли из приложения!");
-                    break;
-                }
+                System.out.printf("Результат = %s%n", result);
             }
             if (operation.equals("/")){
                 result = number_one / number_two;
                 System.out.println(String.format("Результат = %s", result));
-                System.out.println("Хотите продолжить? 'да' или 'нет' :");
-                answer = scanner2.nextLine();
-                while ((!answer.equalsIgnoreCase("нет")) && (!answer.equalsIgnoreCase("да"))){
-                    System.out.println("Некорректное выражение. Желаете продолжить 'да' или 'нет' ?:");
-                    answer = scanner2.nextLine();
-                }
-                if (answer.equalsIgnoreCase("нет")){
-                    System.out.println("Вы вышли из приложения!");
-                    break;
-                }
             }
 
+            System.out.println("Хотите продолжить? 'да' или 'нет' :");
+            String answer = scanner2.nextLine();
+            while ((!answer.equalsIgnoreCase("нет")) && (!answer.equalsIgnoreCase("да"))){
+                System.out.println("Некорректное выражение. Желаете продолжить 'да' или 'нет' ?:");
+                answer = scanner2.nextLine();
+            }
+            if (answer.equalsIgnoreCase("нет")){
+                System.out.println("Вы вышли из приложения!");
+                break;
+            }
         }
-
     }   
 }
 
