@@ -10,7 +10,13 @@ public class Calc_2 {
         while (true) {
             System.out.println("Введите первое число:");
             Scanner scanner = new Scanner(System.in);
-            number_one = scanner.nextDouble();
+            if (scanner.hasNextDouble()) {
+                number_one = scanner.nextDouble();
+            } else {
+                System.out.println("Вы ввели неверное число.");
+                System.out.println("Попробуйте еще раз. Например число десять в формате 10,00 :");
+                continue;
+            }
 
             System.out.println("Введите знак операции +,-,/,* :");
             Scanner scanner2 = new Scanner(System.in);
@@ -22,7 +28,15 @@ public class Calc_2 {
             }
 
             System.out.println("Введите второе число:");
-            number_two = scanner.nextDouble();
+
+            if (scanner.hasNextDouble()) {
+                number_two = scanner.nextDouble();
+            } else {
+                System.out.println("Вы ввели неверное число.");
+                System.out.println("Калькулятор перезапущен.");
+                continue;
+            }
+
             while ((operation.equals("/")) && (number_two == 0)){
                 System.out.println("Деление на '0' запрещено. Введите второе число еще раз:");
                 number_two = scanner.nextDouble();
