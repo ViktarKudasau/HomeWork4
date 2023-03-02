@@ -31,15 +31,15 @@ public class Calc_2 {
             switch (operation) {
                 case "+":
                     result = number_one + number_two;
-                    System.out.printf("Результат = %s%n", result);
+                    System.out.println("Результат = " +result);
                     break;
                 case "-":
                     result = number_one - number_two;
-                    System.out.printf("Результат = %s%n", result);
+                    System.out.println("Результат = " +result);
                     break;
                 case "*":
                     result = number_one * number_two;
-                    System.out.printf("Результат = %s%n", result);
+                    System.out.println("Результат = " +result);
                     break;
                 case "/":
                     result = number_one / number_two;
