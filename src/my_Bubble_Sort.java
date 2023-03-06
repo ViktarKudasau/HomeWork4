@@ -3,7 +3,6 @@ public class my_Bubble_Sort {
 
         int[] array = {23,17,34,3,157,18,25,39,163,27,99};
         PrintArray(array);
-
         boolean sort = false;
         while (sort != true){
             sort = true;
