@@ -2,7 +2,7 @@ public class my_Bubble_Sort {
     public static void main(String[] args){
 
         int[] array = {23,17,34,3,157,18,25,39,163,27,99};
-        PrintArray(array);      // Выводим в консоль исходный массив
+        PrintArray(array);      // Печатаем в консоль исходный массив
         boolean sort = false;
         while (sort != true){
             sort = true;
@@ -16,9 +16,9 @@ public class my_Bubble_Sort {
             }
         }
         System.out.println();
-        PrintArray(array);   // Выводим в консоль отсортированный массив методом Bubble Sort
+        PrintArray(array);   // Печатаем в консоль отсортированный массив методом Bubble Sort
     }
-    static void PrintArray(int[] arrayToPrint){
+    static void PrintArray(int[] arrayToPrint){  // Создаем функцию печати массива в консоль
         for (int i = 0; i < arrayToPrint.length; i++) {
             System.out.print(" " +arrayToPrint[i]);
         }
