@@ -2,7 +2,7 @@ public class my_Bubble_Sort {
     public static void main(String[] args){
 
         int[] array = {23,17,34,3,157,18,25,39,163,27,99};
-        PrintArray(array);      // Выводим в консоль исходный массив
+        PrintArray(array);      // Р’С‹РІРѕРґРёРј РІ РєРѕРЅСЃРѕР»СЊ РёСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ
         boolean sort = false;
         while (sort != true){
             sort = true;
@@ -16,7 +16,7 @@ public class my_Bubble_Sort {
             }
         }
         System.out.println();
-        PrintArray(array);   // Выводим в консоль отсортированный массив методом Bubble Sort
+        PrintArray(array);   // Р’С‹РІРѕРґРёРј РІ РєРѕРЅСЃРѕР»СЊ РѕС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ РјРµС‚РѕРґРѕРј Bubble Sort
     }
     static void PrintArray(int[] arrayToPrint){
         for (int i = 0; i < arrayToPrint.length; i++) {
