@@ -83,7 +83,6 @@ public class CatClass {
                 ", ownerName=" + ownerName +
                 '}';
     }
-
 }
 
 
