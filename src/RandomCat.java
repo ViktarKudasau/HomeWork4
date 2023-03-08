@@ -45,6 +45,5 @@ public class RandomCat {
         CatClass cat = new CatClass(getRandomName(), getRandomAge(), getRandomName(), getRandomName(), getRandomBoolean());
         return cat;
     }
-
 }
 
